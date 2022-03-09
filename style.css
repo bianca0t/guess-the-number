@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c5f6fa;
+  font-size: 62.5%;
+  font-family: "Comfortaa", sans-serif;
+  position: relative;
+}
+
+header {
+  position: relative;
+  height: 40vh;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.primary-title,
+.secondary-title,
+.second {
+  color: #d6336c;
+}
+
+.primary-title {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.secondary-title {
+  font-size: 2rem;
+}
+
+.again {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+main {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.first {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.second {
+  width: 50rem;
+  font-size: 1.8rem;
+}
+
+.btn {
+  border: 2px solid #d6336c;
+  background-color: transparent;
+  padding: 1.2rem 2.4rem;
+  border-radius: 15px;
+  color: #d6336c;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d6336c;
+  color: #c5f6fa;
+}
+
+.guess {
+  background: none;
+  border: 3px solid #d6336c;
+  font-family: inherit;
+  color: inherit;
+  font-size: 3rem;
+  padding: 1.6rem;
+  width: 16rem;
+  text-align: center;
+}
+
+.attempts {
+  margin-bottom: 1.8rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  background-color: #d6336c;
+  padding: 5em;
+  border-radius: 20px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+.modal-message {
+  font-size: 2.4rem;
+  color: #c5f6fa;
+  font-weight: 500;
+}
+
+.btn-modal {
+  border: 2px solid #c5f6fa;
+  color: #c5f6fa;
+}
+
+.btn-modal:hover {
+  background-color: #c5f6fa;
+  color: #d6336c;
+}
